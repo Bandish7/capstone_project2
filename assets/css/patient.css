@@ -1,0 +1,222 @@
+@import url(./reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+}
+
+nav {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    padding: 10px 20px;
+}
+
+.logo {
+    height: 90px;
+}
+
+.logo img {
+    height: 100%;
+}
+
+.right-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.avatar {
+    width: 60px;
+}
+
+.username {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* Dashboards */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: rgb(228, 231, 235);
+   padding-top: 30px;
+
+}
+
+/* Side panel */
+.sidepanel {
+    flex-basis: 20%;
+    height: 100vh;
+    background-color: white;
+    border-radius: 0 50px 0 0;
+    padding: 30px 36px 0 0;
+
+}
+
+.panel-list {
+    padding: 20px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.panel-list li {
+
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    letter-spacing: 1.1px;
+}
+.panel-list li a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.panel-list li:hover a {
+    color: #B51F60;
+    background-color: rgb(241 245 249);
+}
+.panel-list li:hover,
+.active {
+    color: #B51F60;
+    background-color: rgb(241 245 249);
+}
+.sidepanel-title {
+    font-size: 28px;
+    font-weight: 500;
+    padding-left: 20px;
+
+}
+
+.fa-duotone {
+    background-color: rgb(241 245 249);
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 28px;
+}
+
+/* Dash */
+.dashboard-wrap {
+    flex-basis: 79%;
+    height: 100vh;
+    padding: 30px 0 0 36px;
+    margin-right: 1%;
+
+}
+
+.dashboard {
+    
+    border-radius: 50px 0 0 0;
+   
+    display: flex;
+   flex-direction: column;
+    row-gap: 20px;
+    column-gap: 10px;
+}
+
+.dashboard-title {
+    font-size: 28px;
+    font-weight: 500;
+    padding: 0 0 25px 0;
+    color:rgba(181, 31, 96,0.6);
+
+}
+.one{
+    border-radius: 15px;
+    background-color: white;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding:0;
+}
+.greetings h2{
+    font-size: 30px;font-weight: 500;
+    /* letter-spacing: 1.1px; */
+    padding: 25px 0 0 20px ;
+}
+.primary-status{
+    color: #B51F60;
+    font-weight: 550;
+ 
+}
+.greetings p{
+    font-size: 20px;
+    font-weight: 450;
+    color: #88898b;
+    padding: 15px 25px 25px 20px;
+}
+.counsellor-title{
+    font-size: 24px;
+    font-weight: 500;
+    padding: 30px 20px;
+    }
+.four{
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 15px;
+}
+table,th,td{
+    border: 1px solid #c3c5db;
+    text-align: center;
+    padding: 10px 0;
+
+}
+th{
+    font-weight: 600;
+}
+tr:nth-child(even) {
+    background-color: rgba(202, 200, 204,0.3);
+  }
+.edit{
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-weight: 500;
+
+    
+}
+.delete{
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-weight: 500;
+    
+}
+.online-btn{
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+}
+.offline-btn{
+    background-color: rgb(6, 109, 6);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+}

@@ -1,0 +1,338 @@
+@import url(./reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    background-color: #533174;
+}
+
+/* Navigation Starts for admin */
+nav {
+   
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+
+.topbar {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 90px;
+}
+
+.logo img {
+    height: 100%;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.avatar {
+    width: 60px;
+}
+
+.username {
+    font-size: 22px;
+    font-weight: 600;
+    color: #fefefe;
+}
+
+.role {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    color: #fefefe;
+}
+
+/* 
+Navigation for menu Bottom
+*/
+.bottombar {
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: #533174;
+    padding: 20px 20px;
+
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    letter-spacing: 1%;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+}
+
+
+.active {
+    color: white;
+    background-color: #B51F60;
+}
+
+/* Navigation ends here */
+/* Greetings Starts */
+.greetings-wrapper {
+    width: 100%;
+    background-color: #f3f3f3;
+}
+
+.greetings {
+    width: 80%;
+    margin: auto;
+    padding: 15px 0;
+}
+
+.greetings h2 {
+    font-size: 30px;
+    font-weight: 500;
+
+    padding: 25px 0 0 20px;
+}
+
+.primary-status {
+    color: #B51F60;
+    font-weight: 550;
+
+}
+
+.status {
+    font-size: 20px;
+    font-weight: 450;
+    color: #88898b;
+    padding: 15px 25px 25px 20px;
+}
+
+/* Greetings Ends */
+
+/* Status Card Starts  */
+.status-card-wrapper {
+    width: 100%;
+    margin: 5rem 0;
+}
+
+.status-card-inside {
+    width: 80%;
+    margin: 2rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.status-card {
+    flex-basis: 32%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 10px;
+    background-color: #eeeaf1;
+    padding: 20px 0;
+    border-radius: 15px;
+}
+
+.status-title {
+    font-size: 22px;
+    font-weight: 500;
+ 
+
+}
+.status-number{
+    font-size: 50px;
+    font-weight: 700;
+    color: #B51F60;
+
+}
+
+.fa-duotone {
+    padding: 12px;
+    border: none;
+    font-size: 50px;
+}
+
+/* Table */
+.patients-table{
+    width: 100%;
+    margin:3rem 0;
+}
+.table-container{
+    width: 80%;
+    margin: auto;
+}
+.table-title{
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+table {
+    width: 100%;
+    align-items: center;
+    margin: auto;
+}
+
+table,
+th,
+td {
+    border: 1px solid #c3c5db;
+    text-align: center;
+    padding: 15px;
+
+}
+
+th {
+    font-weight: 600;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(202, 200, 204, 0.3);
+}
+
+.edit {
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-weight: 500;
+
+
+}
+
+.delete {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-weight: 500;
+
+}
+
+.online-btn {
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+}
+
+.offline-btn {
+    background-color: rgb(6, 109, 6);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+}
+/* Popup Form  */
+
+.open-button {
+    background-color: #B51F60;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 200px;
+    font-size: 22px;
+  }
+  
+  /* The popup form - hidden by default */
+  .form-popup {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 500px;
+    padding: 20px;
+    background-color: white;
+    overflow: hidden;
+  }
+  
+  /* Full-width input fields */
+  .form-container input[type=text], .form-container input[type=password], .form-container input[type=tel],.form-container select{
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  /* When the inputs get focus, do something */
+  .form-container input[type=text], 
+  .form-container input[type=password], 
+  .form-container input[type=tel], 
+  .form-container select:focus {
+      background-color: #eeeaf1;
+      outline: none;
+  }
+  
+  /* Set a style for the submit/login button */
+  .form-container .btn {
+    background-color: #533174;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+    font-size: 18px;
+    border-radius: 5px;
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: red;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+
+  /* Availability Btn  */
+  .online-btn{
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+}
+.offline-btn{
+    background-color: rgb(6, 109, 6);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+}

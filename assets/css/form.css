@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  
+    margin: auto;
+    font-family: "Roboto", sans-serif;
+  }
+
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 32px;
+    font-weight: 550;
+}
+
+.appointment-form .form-group {
+    margin-bottom: 15px;
+}
+
+.appointment-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 600;
+}
+
+.appointment-form input,
+.appointment-form select,
+.appointment-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    font-size: 16px;
+}
+textarea::placeholder{
+font-family: Arial, Helvetica, sans-serif
+}
+.appointment-form input:focus,
+.appointment-form select:focus,
+.appointment-form textarea:focus {
+    outline: none;
+    border-color: #5f76f3;
+    box-shadow: 0 0 5px rgba(95, 118, 243, 0.5);
+}
+
+.appointment-form button {
+    background-color: #5f76f3;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.appointment-form button:hover {
+    background-color: #4b5ac9;
+}
+
+textarea {
+    resize: none;
+}
+/* Footer */
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #533174;
+    color: white;
+    padding: 1.5rem 0;
+  }
+  .footertext{
+    font-size: 18px;
+  }
+  
